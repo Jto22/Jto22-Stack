@@ -1,6 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties.Value;
 /**
  * Stacks are LIFO - last in, first out, like a stack of plates or books, or the puzzle game "Towers of Hanoi".
  * They are used in algorithms where it is needed to keep track of the ordering in which the elements were inserted.
@@ -40,7 +41,7 @@ public class Lab {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
-        stack.add(item);
+        stack.addFirst(item);;
     }
 
     /**
